@@ -1,0 +1,39 @@
+.navBar {
+  // padding: 24px 0;
+  // display: flex;
+  background: #969191;
+    padding: 3px 14px;
+    display: flex;
+  .logo {
+    font-weight: 500;
+    font-size: 24px;
+    color: #dedede;
+    width: 30%;
+    text-transform: uppercase;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+    nav {
+      margin-right: 10px;
+      display: flex;
+      justify-content: flex-end;
+
+      a {
+        font-size: 13px;
+        color: #dedede;
+        text-transform: capitalize;
+        span {
+          font-size: 10px;
+          padding: 0 4px;
+        }
+        &:hover {
+          text-decoration: none;
+          color: #dedede;
+        }
+      }
+    }
+  }
+}

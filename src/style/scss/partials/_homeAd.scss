@@ -1,0 +1,118 @@
+#ad {
+  padding-top: 20px;
+  margin-bottom:20px;
+  .image {
+    background-image: url("../../img/sofaAd.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    .hoverImage {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 141px 15px 15px 15px;
+      margin: 0 auto;
+
+      .title {
+        letter-spacing: 1px;
+        color: white;
+        text-transform: uppercase;
+        padding: 30px 0 0 0;
+        font-weight: 700;
+        p {
+          line-height: 50px;
+          margin: 0;
+          &:nth-of-type(1) {
+            letter-spacing: 1.5px;
+            font-size: 36px;
+          }
+          &:nth-of-type(2) {
+            font-size: 64px;
+            margin-bottom: 30px;
+          }
+          &:nth-of-type(3) {
+            border: solid 5px white;
+            font-size: 50px;
+            display: inline-flex;
+            padding: 10px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .smallAd {
+    margin-top:20px;//margin-top:0;
+    padding:20px 0;//padding:0;
+    height: 47%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .text {
+      color:black;
+      padding: 0 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      width: 40%;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 300;
+      span {
+        font-weight: 700;
+      }
+      p {
+        margin: 0;
+        &:nth-of-type(1) {
+          font-size: 18.5px;
+          font-weight: 600;
+          letter-spacing: 3.2px;
+          margin-top: -5px;
+        }
+        &:nth-of-type(2) {
+          font-size: 35px;
+          color: $orangeColor;
+          font-weight: 700;
+        }
+      }
+    }
+    .img {
+      width: 30%;
+      img {
+      }
+      &:nth-of-type(1) {
+        transform: scale(1.2);
+      }
+    }
+    .text + .img {
+      img {
+      }
+    }
+    &:nth-of-type(1) {
+      background: #e8edf7;
+    }
+    &:nth-of-type(2) {
+      background: #fbf3f7;
+      margin-top: 26px;
+      padding: 0 28px;
+      .img {
+        width: 40%;
+        img {
+          transform: scale(1.17);
+        }
+      }
+      .text {
+        text-align: right;
+        width: 60%;
+        font-size: 24px;
+        color: $orangeColor;
+        p {
+          letter-spacing: -0.7px;
+          font-size: 18px;
+          color: #212529;
+        }
+      }
+    }
+    &{
+      @media all and (min-width:992px){
+        margin-top:0px;
+      }
+    }
+  }
+}

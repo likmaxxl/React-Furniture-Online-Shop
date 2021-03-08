@@ -1,0 +1,51 @@
+.brands{
+  margin:40px 0;
+
+.brandsCarousel{
+
+  .react-multi-carousel-list{
+    padding:20px 0;
+  border-top:solid 1px #cfcfcf;
+  border-bottom:solid 1px #cfcfcf;
+}
+    li{
+  width: 185px !important;
+  margin: 1px;
+img{
+  border:solid 1px #cfcfcf;
+  height:94px;
+}
+
+    }
+//   }
+//   .react-multi-carousel-list{
+//     border:solid 1px red;
+// display: flex;
+//
+//   }
+  .react-multiple-carousel__arrow{
+    min-height: 94px;
+        top:21px;
+    background: $darkerBlackColor;
+    z-index: 11;
+
+  }
+  .react-multiple-carousel__arrow--right{
+    border-radius:0px;
+    right:0px;
+    &:focus{
+      outline:none;
+    }
+
+  }
+  .react-multiple-carousel__arrow--left{
+    border-radius:0px;
+    left:0;
+    &:focus{
+      outline:none;
+    }
+  }
+
+}
+
+}

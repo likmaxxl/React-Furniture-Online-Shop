@@ -1,0 +1,328 @@
+.newProducts{
+  padding-bottom:50px;
+  height: 591px;//height:auto;
+    overflow-y: scroll;//overflow:visible;
+    &{
+      @media all and (min-width:992px){
+      overflow:visible;
+      height:auto;
+      }
+    }
+}
+.newProducts ,
+#furnitureMainPage,
+#chair,
+#bedroom,
+#sofa,
+#table,
+#ad,
+.searchPage
+{
+  padding-top: 55px;
+
+  .titleAndNav {
+    width:93%;
+    height: 37px;
+    border-bottom: solid 3px #e2e2e2;
+margin-top:38px;//margin-top:0;
+    .titleRel {
+      position: relative;
+      .titleAbs {
+        position: absolute;
+        left: 0;
+        h4 {
+          color: $orangeColor;
+          font-family: "Poppins", sans-serif;
+          position: relative;
+          margin: 0;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 600;
+                top:-43px;//top:0;
+          &:after {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 3px;
+            background: $orangeColor;
+            left: 0;
+            bottom: -13px;
+          }
+          &{
+            @media all and (min-width:768px){
+      top:0px;
+            }
+          }
+        }
+      }
+    }
+    &{
+      @media all and (min-width:768px){
+width:100%;
+      }
+    }
+  }
+
+  .navNewProducts {
+    justify-content: center;
+    display: flex;
+
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      li {
+        color: $darkerBlackColor;
+        font-size: 18px;
+        margin-right: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding-bottom: 4px;
+        font-size: 20px;
+        border-bottom: solid 3px #e2e2e2;
+      }
+      li:hover {
+        border-bottom: solid 3px $orangeColor;
+      }
+      .activeOnClick{
+        border-bottom:solid 3px #d58e32;
+      }
+    }
+  }
+
+  /**SINGLE PRODUCT**/
+  .coll {
+    article {
+      margin-top: 40px;
+
+      .image {
+        overflow: hidden;
+        position: relative;
+        img {
+            width:100%;
+          object-fit: cover;
+          height: 250px;
+          transition: all 0.5s;
+        }
+        .sale {
+          padding: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          border-radius: 50%;
+          // border-bottom-left-radius: 50%;
+          // border-bottom-right-radius: 50%;
+          font-size: 13px;
+          color: white;
+          position: absolute;
+          top: -37px;
+          left: 50%;
+          transform: translate(-50%, 10px);
+          width: 49px;
+          height: 48px;
+          background: $darkerBlackColor;
+        }
+        .btns {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          .btn {
+            width:48%;
+            margin:0 auto;
+            border-radius: 0px;
+            transition: all 0.3s;
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            position: relative;
+            top: 50px;
+            // left:-1px;
+            padding: 5px;
+            background: $darkerBlackColor;
+            color: white;
+            // &:nth-of-type(1) {
+            //   left:-2%;
+            //
+            // }
+            // &:nth-of-type(2) {
+            //   font-weight: 600;
+            //   left:2%;
+            // }
+            &:focus {
+              box-shadow: none;
+            }
+            &:hover {
+              background: $orangeColor;
+            }
+            span {
+              padding-right: 2px;
+              font-size: 12px;
+              position: relative;
+              left:-2px;
+            }
+          }
+        }
+      }
+      .legend {
+        opacity: 1;
+        background: white;
+        width: calc(100% - 1px);
+        border: solid 1px #d2c7c7;
+        border-top: none;
+        padding: 13px 10px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        position: static;
+        margin-left: 0;
+        border-radius: 0px;
+        span {
+          font-size: 17px;
+          color: $orangeColor;
+          font-weight: 600;
+        }
+        .stars {
+          color:$darkerBlackColor;
+          padding: 8px 0;
+        }
+        .borderHotDeals {
+          position: relative;
+          height: 1px;
+          background: #2a2a2a;
+          width: 100%;
+          margin: 10px 0;
+          &:after {
+            width: 28px;
+            height: 4px;
+            position: absolute;
+            top: -1.6px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            content: "";
+            background: #d58e32;
+          }
+        }
+        .options {
+          padding-top: 10px;
+          display: flex;
+          .optionsViews {
+            display: flex;
+            width: 50%;
+            justify-content: flex-start;
+            a{
+              text-decoration: none;
+            }
+            .boxViews {
+              color: $darkerBlackColor;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 14px;
+              border: solid 1px #2a2a2a;
+              margin-right: 6px;
+              width: 34px;
+              height: 34px;
+.animationHeart{
+  color:#d62929;
+  font-size: 14px;
+  animation-name: animationHeartClick;
+  animation-duration: .5s;
+}
+@keyframes animationHeartClick{
+  0%{
+  font-size: 14px;
+  }
+  50%{
+  font-size: 19px;
+  }
+  100%{
+  font-size: 14px;
+  }
+}
+            }
+          }
+          .price {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            .newPrice {
+              color: white;
+              line-height: 31px;
+              font-weight: 500;
+              padding: 0 10px;
+              font-size: 17px;
+              height: 34px;
+              background: #2a2a2a;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+      &:hover {
+
+        .options {
+          .price {
+            .newPrice {
+              transition: all 0.3s;
+              background: $orangeColor;
+            }
+          }
+        }
+        .image {
+          .btn {
+            transition: all 0.3s;
+            top: 0px;
+          }
+          img {
+            transition: all 0.5s;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  .carousel-slider{
+    position: relative;
+    overflow: visible !important;
+    opacity: 1;
+
+  .slide {
+    background: white;
+  }
+  .carousel-status,
+  .control-arrow{
+    display: none;
+  }
+
+  .control-dots{
+    text-align: right;
+top:-25px;
+height:30px;
+.dot {
+  background: $darkerBlackColor;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 0.2;
+  &.selected {
+    opacity: 1;
+    background: $orangeColor;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+  }
+  }
+
+}
+#chair,#bedroom,#sofa,#table{
+  padding-top:288px;
+  @media all and (min-width:768px){
+      padding-top:206px;
+  }
+}

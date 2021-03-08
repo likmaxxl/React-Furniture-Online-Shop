@@ -1,0 +1,44 @@
+.searchPage {
+  padding-top:225px;
+  font-family: "Poppins", sans-serif;
+  .alert {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    span {
+      margin-right: 8px;
+    }
+  }
+  h4 {
+  }
+  .check {
+    ul {
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+  }
+  .try {
+    padding-left:22px;
+    p {
+      font-weight: 300;
+    }
+    padding-bottom: 20px;
+  }
+  .animationHeart{
+    color:#d62929;
+    font-size: 14px;
+    animation-name: animationHeartClick;
+    animation-duration: .5s;
+  }
+  @keyframes animationHeartClick{
+    0%{
+    font-size: 14px;
+    }
+    50%{
+    font-size: 19px;
+    }
+    100%{
+    font-size: 14px;
+    }
+  }
+}

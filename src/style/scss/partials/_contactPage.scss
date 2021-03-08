@@ -1,0 +1,118 @@
+.contactPage{
+  z-index: 0;
+  position: relative;
+
+  background:#e4e4e4;
+// clip-path: polygon(5% 13%, 100% 0, 100% 100%, 0% 100%);
+position: relative;
+  padding:263px 0 40px 0;
+  font-family: 'Poppins', sans-serif;
+  @media all and (min-width:768px){
+      padding-top:200px;
+
+  }
+.contactHeader{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin:70px 0 148px 0;
+
+  h6{
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:#d58e32;
+  }
+  h1{
+    font-weight: 700;
+    margin:15px auto;
+  }
+}
+//FORM
+.contactForm{
+  position: relative;
+  z-index: 0;
+  padding-top:211px;
+  padding-bottom:40px;
+  margin-top:-307px;
+
+  form{
+    label{
+      text-transform: uppercase;
+      font-size: 13px;
+      span{
+        color:red;
+      }
+    }
+    .buttonSend{
+      text-align: center;
+      button{
+        margin-top:20px;
+        border-radius:0px;
+        text-transform: capitalize;
+        width: 100%;
+        height:45px;
+        line-height: 30px;
+        font-size: 16px;
+        background: #d58e32;
+        border:none;
+
+  &:hover{
+    background-color: #de8410;
+  }
+      }
+      .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background-color: #de8410;
+        border:none;
+        box-shadow: none;
+      position: relative;
+      top:1px;
+      }
+    }
+
+  }
+}
+.contactInformation{
+  padding:0px;//  padding:0 30px;
+  margin-top:60px;
+  .contactInfoHead{
+padding-bottom:15px;
+    border-bottom:dashed  4px #d58e32;
+    h2{
+      font-weight: 700;
+      font-size: 40px;
+      color:#d58e32;
+    }
+    h4{
+      font-weight: 200;
+      font-size: 16.7px;
+      margin-bottom:10px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+.contactInfo{
+  margin-top:20px;
+  h4{
+    font-weight: 200;
+    font-size: 16.7px;
+    margin-bottom:15px;
+  }
+  .contactBox{
+    display: flex;
+    align-items: center;
+    margin:5px 0;
+    .icon{
+        color:#d58e32;
+      margin-right:15px;
+      font-size: 20px;
+    }
+    .text{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+}
+}

@@ -1,0 +1,109 @@
+#testmonials{
+    padding-top:16px;//padding-top:90px;
+  padding-bottom:50px;
+  .carousel-root{
+    .carousel-slider{
+      position: relative;
+    overflow: visible;
+    opacity: 1;
+    }
+    .carousel{
+      .control-dots{
+        text-align: right;
+      top: -25px;
+      height: 30px;
+        .dot{
+          background: #2a2a2a;
+          width: 12px;
+          height: 12px;
+          margin: 0 5px;
+          opacity: 0.2;
+          &:focus{
+            outline: none;
+          }
+        }
+        .dot.selected{
+          opacity: 1;
+  background: #d58e32;
+        }
+      }
+    }
+  }
+li{
+  background: white;
+}
+.control-arrow,
+.carousel-status{
+  display:none;
+}
+
+
+.title{
+  width: 83%;//  width: 92%;
+position: relative;
+border-bottom: solid 3px #e2e2e2;
+h4{
+  text-transform: uppercase;
+    color: #d58e32;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    &:after{
+      position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    background: #d58e32;
+    left: 0;
+    bottom: -3px;
+    }
+}
+&{
+  @media all and (min-width:768px){
+    width:90%;
+  }
+  @media all and (min-width:768px){
+    width:93%;
+  }
+}
+}
+.comment{
+  padding-top:30px;
+  .quotes{
+    font-size: 24px;
+    padding-bottom:30px;
+  }
+  p{
+    line-height: 24px;
+    color:#676767;
+    font-size: 14px;
+  }
+  .person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img{
+      width:55px;
+      height:55px;
+  img{
+        border-radius:5px;
+  }
+    }
+    .personInfo{
+      p{
+        margin:0;
+        padding: 0;
+        margin-left:20px;
+        &:nth-of-type(1){
+          margin-left:-3px;
+          font-size:16px;
+          font-weight: 600;
+        }
+        &:nth-of-type(2){
+          font-size:14px;
+        }
+      }
+    }
+  }
+}
+}
