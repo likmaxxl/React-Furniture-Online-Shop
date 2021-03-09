@@ -65,7 +65,18 @@ animation-name:goDownHeader;
           font-size: 17px;
         }
       }
-
+      .number{
+        display: none;
+        @media all and (min-width:768px){
+          display: block;;
+        }
+      }
+.logo{
+  display: none;
+  @media all and (min-width:768px){
+    display: block;;
+  }
+}
       .shopCart {
         position: relative;
         width: 47px;
@@ -419,7 +430,7 @@ z-index: 2;
   height:100vh;
     top:0px;
     // top:-1200px;
-    transform:translate(0 1200px);
+    // transform:translate(0 1200px);
     background: black;
 
   }
@@ -456,7 +467,7 @@ animation-fill-mode: forwards;
 
 /**SCROLL DOWN**/
 .headerFromTopToBottom{
-  height:206px;
+  height:146px;
   position: fixed !important;
   z-index: 9999;
   width:100%;
@@ -465,7 +476,9 @@ animation-fill-mode: forwards;
 transition: transform .5s ease-in-out;
 animation-fill-mode: forwards;
 transition: all 1s;
-
+@media all and (min-width:768px){
+    height:206px;
+}
 }
 
 @keyframes goDown {

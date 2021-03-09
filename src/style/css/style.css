@@ -58,6 +58,16 @@ html, body {
         font-weight: 500;
         color: #e0e3ed;
         font-size: 17px; }
+      #header .topHead .coll .number {
+        display: none; }
+        @media all and (min-width: 768px) {
+          #header .topHead .coll .number {
+            display: block; } }
+      #header .topHead .coll .logo {
+        display: none; }
+        @media all and (min-width: 768px) {
+          #header .topHead .coll .logo {
+            display: block; } }
       #header .topHead .coll .shopCart {
         position: relative;
         width: 47px;
@@ -296,7 +306,6 @@ html, body {
   to {
     height: 100vh;
     top: 0px;
-    transform: translate(0 1200px);
     background: black; } }
 /*******HEADER ANIMATION ON SCROLL************/
 .headerFromBottomToTop {
@@ -316,7 +325,7 @@ html, body {
     transform: translate(0px, -300px); } }
 /**SCROLL DOWN**/
 .headerFromTopToBottom {
-  height: 206px;
+  height: 146px;
   position: fixed !important;
   z-index: 9999;
   width: 100%;
@@ -325,6 +334,9 @@ html, body {
   transition: transform .5s ease-in-out;
   animation-fill-mode: forwards;
   transition: all 1s; }
+  @media all and (min-width: 768px) {
+    .headerFromTopToBottom {
+      height: 206px; } }
 
 @keyframes goDown {
   0% {
@@ -383,7 +395,7 @@ html, body {
     top: -100px;
     display: none; } }
 #coverHomePage {
-  padding-top: 290px; }
+  padding-top: 153px; }
   @media all and (min-width: 768px) {
     #coverHomePage {
       padding-top: 200px; } }
@@ -1439,7 +1451,7 @@ html, body {
           outline: none; }
 
 #chair, #bedroom, #sofa, #table {
-  padding-top: 288px; }
+  padding-top: 154px; }
   @media all and (min-width: 768px) {
     #chair, #bedroom, #sofa, #table {
       padding-top: 206px; } }
@@ -2125,7 +2137,7 @@ footer {
 
 #furnitureMainPage,
 .boxesfilteredProducts {
-  padding-top: 290px; }
+  padding-top: 155px; }
   @media all and (min-width: 768px) {
     #furnitureMainPage,
     .boxesfilteredProducts {
@@ -2576,7 +2588,7 @@ footer {
 
 .singleProduct {
   background: linear-gradient(180deg, #7f7f7f 43%, white 43%);
-  padding-top: 288px;
+  padding-top: 165px;
   /**CAROUSEL**/
   /**PRODUCT DETAILS*/ }
   @media all and (min-width: 768px) {
@@ -2877,10 +2889,16 @@ footer {
             justify-content: flex-start; } }
 
 .cart {
-  padding-top: 206px;
+  padding-top: 164px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
   /**ORDER SUMMARY*/ }
+  @media all and (min-width: 768px) {
+    .cart {
+      padding-top: 206px; } }
+  @media all and (min-width: 992px) {
+    .cart {
+      padding-top: 230px; } }
   .cart .coll:nth-of-type(1) .table {
     padding: 10px 0; }
     .cart .coll:nth-of-type(1) .table thead tr th {
@@ -3286,7 +3304,7 @@ footer {
     font-size: 14px; } }
 .comparePage {
   margin: 0 auto;
-  padding-top: 292px;
+  padding-top: 164px;
   overflow-x: auto; }
   @media all and (min-width: 768px) {
     .comparePage {
@@ -3445,7 +3463,7 @@ footer {
   position: relative;
   background: #e4e4e4;
   position: relative;
-  padding: 263px 0 40px 0;
+  padding: 116px 0 40px 0;
   font-family: 'Poppins', sans-serif; }
   @media all and (min-width: 768px) {
     .contactPage {
@@ -3529,7 +3547,10 @@ footer {
           font-weight: 300; }
 
 #blogContent {
-  padding-top: 286px; }
+  padding-top: 155px; }
+  @media all and (min-width: 768px) {
+    #blogContent {
+      padding-top: 200px; } }
   #blogContent .rounded {
     margin-top: 30px; }
     #blogContent .rounded img {

@@ -12,10 +12,10 @@ function App() {
     <div className="App">
 <UserProvider>
 <BazarEcommerceApp/>
-  {/* <Lines
+  <Lines
     color={'#d58e32'}
     time={1000}
-  /> */}
+  />
 </UserProvider>
     </div>
   );

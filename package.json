@@ -1,5 +1,6 @@
 {
-  "name": "exercise-swarcmiller",
+  "name": "React-Furniture-Shop",
+  "homepage":"http://likmatest.epizy.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

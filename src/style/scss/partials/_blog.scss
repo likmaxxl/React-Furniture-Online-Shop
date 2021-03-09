@@ -1,6 +1,9 @@
 
 #blogContent{
-  padding-top:286px;
+  padding-top:155px;
+  @media all and(min-width:768px){
+    padding-top:200px;
+  }
   .rounded{
 margin-top:30px;
 img{

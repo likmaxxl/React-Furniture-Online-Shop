@@ -1,7 +1,14 @@
 .cart {
-  padding-top:206px;
+  padding-top:164px;
+
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
+  @media all and (min-width:768px){
+    padding-top:206px;
+  }
+  @media all and (min-width:992px){
+    padding-top:230px;
+  }
   .coll:nth-of-type(1) {
     .table {
       padding: 10px 0;
