@@ -329,7 +329,7 @@ theposition:window.scrollTo(0, 0),
 //FURNITURE PAGE SORT BY PRICE
 sortPrice:(e)=>{
 let selectValue=e.target.value
-
+console.log('ss');
 let allPr=[...this.state.selectFilterByPrice]
 this.setState({
   selectFilterByPrice:allPr,
