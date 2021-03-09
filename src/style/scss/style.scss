@@ -1,0 +1,45 @@
+
+/******GLOBAL*****/
+$orangeColor: #d58e32;
+$darkerBlackColor: #2a2a2a;
+
+
+
+
+body,h1,h2,h3,h4,h5,h6,p,span{
+  font-family: 'Poppins', sans-serif;
+
+}
+html,body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+/****IMPORT***/
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@import 'partials/_header.scss';
+@import 'partials/_homeCover.scss';
+@import 'partials/_homeForOption.scss';
+@import 'partials/_homeAd.scss';
+@import 'partials/_homeNewProducts.scss';
+@import 'partials/_homefurnitureGallery.scss';
+@import 'partials/_homeBlog.scss';
+@import 'partials/_homeBrands.scss';
+@import 'partials/_homeTestmonials.scss';
+@import 'partials/_footer.scss';
+@import 'partials/_jumbatron.scss';
+@import 'partials/_filterByPrice.scss';
+@import 'partials/_filterRightBar.scss';
+@import 'partials/_featuredProducts.scss';
+@import 'partials/_newsletter.scss';
+@import 'partials/_homeSingleProduct.scss';
+@import 'partials/_itemsInCart.scss';
+@import 'partials/_navigationRoute.scss';
+@import 'partials/_boxesfilteredProducts.scss';
+@import 'partials/_SearchNoMatch.scss';
+@import 'partials/_comparePage.scss';
+@import 'partials/_contactPage.scss';
+@import 'partials/_blog.scss';
+@import 'partials/_readMoreBlog.scss';

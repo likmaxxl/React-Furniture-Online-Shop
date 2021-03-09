@@ -1,0 +1,74 @@
+#forOption{
+  padding-top:73px;
+.coll{
+  article{
+    transition: all 6s;
+    position: relative;
+    margin-top:20px;//0px
+padding:59px 0;//padding:13px 0;
+    text-align: center;
+    border:solid 1px #c6c4d7d4;
+    .icon{
+      transition: all .2s;
+      position: relative;
+background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:67px;
+      height:67px;
+      border:solid 1px #c6c4d7d4;
+      margin:-40px auto 15px auto;
+
+      border-radius: 50%;
+      span{
+        transition: all .2s;
+        justify-content: center;
+        align-items: center;
+          border:solid 1px #c6c4d7d4;
+                border-radius: 50%;
+        display: flex;
+        width:55px;
+        height:55px;
+        font-size: 25px;
+        color:#2a2a2a;
+        .fa-truck{
+          transform: rotateY(180deg);
+        }
+      }
+    }
+    p{
+      letter-spacing: 0px;
+        font-family: 'Poppins', sans-serif;
+      margin:0;
+transition: all .2s;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 24px;
+      &:nth-of-type(1){
+        font-weight: 500;
+      }
+      &:nth-of-type(2){
+        font-weight: 300;
+      }
+    }
+    &:hover{
+
+      .icon{
+transition: all .2s;
+        border:solid 1px $orangeColor;
+        span{
+            transition: all .2s;
+          background: $orangeColor;
+          color:white;
+            border:solid 1px $orangeColor;
+        }
+      }
+      p{
+        transition: all .2s;
+        color:$orangeColor;
+      }
+    }
+  }
+}
+}

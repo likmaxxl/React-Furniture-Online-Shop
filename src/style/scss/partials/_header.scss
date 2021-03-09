@@ -1,0 +1,559 @@
+#header {
+  position: relative;
+  // height:206px;
+.headerAbs{
+  position: fixed;
+animation-name:goDownHeader;
+  z-index: 999999;
+  width:100%;
+}
+@keyframes goDownHeader {
+  0%{
+  transform: translate(0px,-300px);
+  }
+  100%{
+
+      transform: translate(0px,0px);
+  }
+}
+  .topHead {
+    transition:all 1s;
+    background: rgb(54, 54, 54);
+    padding: 25px 0;
+    .coll {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .number,
+      .shopCart {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+      }
+      .number {
+        .icon {
+          color: $orangeColor;
+          font-size: 32px;
+          padding-right: 11px;
+          transform: translate3d(0, 0, 0);
+          backface-visibility: hidden;
+          perspective: 1000px;
+       animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+        }
+        @keyframes vibrate {
+          0.50%, 10%, 20%, 30%, 40%, 50%
+          {
+            -webkit-transform: translate3d(0.5px, 0, 0);
+            transform: translate3d(0.5px, 0, 0);
+          }
+          5%, 15%, 25%, 35%, 45%
+          {
+            -webkit-transform: translate3d(-0.5px, 0, 0);
+            transform: translate3d(-0.5px, 0, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(0.5px, 0, 0);
+            transform: translate3d(0.5px, 0, 0);
+          }
+
+        }
+        .numb {
+          font-weight: 500;
+          color: #e0e3ed;
+          font-size: 17px;
+        }
+      }
+
+      .shopCart {
+        position: relative;
+        width: 47px;
+        height: 47px;
+        border-radius: 3px;
+        background: $orangeColor;
+
+        .icon {
+          margin-left: -7px;
+          font-size: 19px;
+          color: white;
+
+        }
+        .quantity {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #e0e3ed;
+          background: rgb(54, 54, 54);
+          right: -13px;
+          text-align: center;
+          font-size: 13.5px;
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+      }
+      &:nth-of-type(1) {
+      justify-content: flex-start;
+
+      }
+      &:nth-of-type(3) {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+.topHeadPadding{
+  transition:all 1s;
+  padding:0 !important;
+}
+
+  /***NAVIGATIOIN*/
+  #navigation {
+    -webkit-box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 6px -6px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    background: white;
+    nav {
+      padding: 0;
+overflow: hidden;
+
+      .navbar-collapse {
+        // display: block;
+        background: white;
+        form {
+          width: 50%;
+          display: flex;
+          .icon {
+            position: relative;
+            left: -34px;
+            font-size: 15px;
+            a{
+            color:#2a2a2a;
+            }
+          }
+          input {
+            border-radius: 0px;
+            width: 289px;
+        padding:5px 5px 5px 10px;
+            border: solid 1px $darkerBlackColor;
+            &:focus {
+              box-shadow: 0 0 0 1.5px rgba(42, 42, 42, 0.25);
+            }
+            &{
+              @media all and (min-width:1200px){
+              width: 349px;
+              }
+            }
+          }
+          .icon{
+          cursor:pointer;
+          }
+        }
+        .navbar-nav {
+          text-align: right;
+          width: 50%;
+          display: flex;
+          justify-content: flex-end;
+          a {
+            transition: all 0.1s;
+            padding: 0 10px;
+            height: 67px;
+            line-height: 68px;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 20px;
+            font-weight: 500;
+            background: white;
+            color: $darkerBlackColor;
+                  border-top: solid 3px transparent;
+            &:hover {
+              transition: all 0.1s;
+              color: white;
+
+              border-top: solid 3px black;
+              text-decoration: none;
+              background: $orangeColor;
+            }
+          }
+        }
+        .backgroundLinkClicked{
+          background:$orangeColor !important;
+          border-top: solid 3px black !important;
+          color:white !important;
+        }
+      }
+
+    }
+
+
+    #menu{
+      width:100%;
+      // display: flex;
+      // align-items: flex-end;
+      // justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
+      z-index: 4;
+      padding:10px 0;
+    #pencet{
+  display:flex;
+  align-items:flex-end;
+align-items: flex-end;
+  flex-direction:column;
+  cursor:pointer;
+    span{
+    background-color:$orangeColor;
+    width:2em;
+    height:.2em;
+    margin:0.26em 0;
+    display:block;
+    transition: all .4s ease;
+    transform-origin:0 0;
+
+}
+
+  // .diam{
+  //   span{
+  //
+  //     background-color:black;
+  // width:2em;
+  // height:.2em;
+  // margin:0.26em 0;
+  // display:block;
+  // transition: all .4s;
+  //     &:nth-of-type(1){
+  //       transform: rotate(45deg) translate(1px, -1px);
+  //     }
+  //     &:nth-of-type(2){
+  // transform: rotate(45deg) translate(1px, -1px);
+  //     }
+  //     &:nth-of-type(3){
+  // transform: rotate(-45deg) translate(1px, 0);
+  //     }
+  //   }
+  // }
+}
+.diam{
+  span{
+    &:nth-of-type(1){
+      transform: rotate(45deg) translate(1px, -1px);
+    }
+        &:nth-of-type(2){
+    // transform: rotate(45deg) translate(1px, -1px);
+    transform: rotate(45deg) translate(9px, 33px);
+opacity: 0;
+
+        }
+            &:nth-of-type(3){
+        transform: rotate(-45deg) translate(1px, 0);
+            }
+  }
+}
+@media all and (min-width:992px){
+  display: none;
+}
+  }
+
+
+    .resultRel{
+      z-index: 111;
+      position: relative;
+      .resultAbs{
+        // position: absolute;
+      background:white;
+      max-height: 250px;
+      max-width:380px;
+      overflow: auto;
+      // border:Solid 2px #f3f3f3;
+      .productSearch{
+        background: white;
+        margin:5px;
+        height:42px;
+        padding:0 0 0 5px;
+        text-transform: capitalize;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+          transition: all .3s;
+          color:#212529;
+        &:hover{
+          background:#545454;
+          transition: all .3s;
+          color:white;
+        }
+        .name{
+          width:80%;
+            cursor:pointer;
+        }
+        .image{
+          width:20%;
+          img{
+width:100%;
+height:42px;
+object-fit: cover;
+          }
+        }
+      }
+      }
+      /* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+    }
+  }
+  /**BOIBILE NAVBAR AND LIKS**/
+.mobileNavbar{
+  position: relative;
+  width:100%;
+  background: #c2c2c2;
+
+  .navigationLinksMobile{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    z-index: 99;
+    a{
+      letter-spacing: 1px;
+      width:100%;
+      text-align: center;
+      padding:30px 0px;
+      display: block;
+color:$orangeColor;
+text-decoration: none;
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: all .4s;
+      &:hover{
+        transition: all .4s;
+        background: $orangeColor;
+        color:black;
+      }
+    }
+    &{
+      @media all and (min-width:992px){
+        display:none;
+      }
+    }
+  }
+}
+.navToTop{
+  display:block;
+  background: black;
+  height:0vh;
+  position: relative;
+  // transform:translate(0px 0px);
+  top:-1200px;
+  animation-name:topAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition:all .5s;
+  &{
+    @media all and (min-width:992px){
+      height:auto;
+      top:auto;
+      background: white;
+      display:none;
+    }
+  }
+}
+@keyframes topAnimation{
+from{
+top:0px;
+height:100vh;
+}
+to{
+top:-1200px;
+// top:-1200px;
+height:0vh;
+transform:translate(0 -1200px);
+background: black;
+
+}
+}
+
+      .navToBottom{
+        position: relative;
+        // transform:translate(0px 0px);
+        top:-1200px;
+        // top:auto;
+z-index: 2;
+        animation-name:bottomAnimation;
+        animation-duration:1s;
+        animation-fill-mode: forwards;
+        transition:all 3s;
+        &{
+          @media all and (min-width:992px){
+            height:auto;
+            top:auto;
+            background: white;
+          }
+        }
+      }
+      @keyframes bottomAnimation{
+  from{
+  height:0vh;
+    top:-1200px;
+  }
+  to{
+  height:100vh;
+    top:0px;
+    // top:-1200px;
+    transform:translate(0 1200px);
+    background: black;
+
+  }
+      }
+
+}
+
+/*******HEADER ANIMATION ON SCROLL************/
+.headerFromBottomToTop{
+    position: fixed !important;
+  z-index: 9999;
+  width:100%;
+  height:206px;
+  animation-name: goUp;
+  animation-duration: .5s;
+transition: transform .5s ease-in-out;
+animation-fill-mode: forwards;
+}
+
+@keyframes goUp {
+  0%{
+  transform: translate(0px,0px);
+  }
+  100%{
+
+      transform: translate(0px,-300px);
+  }
+}
+
+
+
+
+
+
+/**SCROLL DOWN**/
+.headerFromTopToBottom{
+  height:206px;
+  position: fixed !important;
+  z-index: 9999;
+  width:100%;
+  animation-name: goDown;
+  animation-duration: .5s;
+transition: transform .5s ease-in-out;
+animation-fill-mode: forwards;
+transition: all 1s;
+
+}
+
+@keyframes goDown {
+  0%{
+  transform: translate(0px,-300px);
+  }
+  100%{
+
+      transform: translate(0px,0px);
+  }
+}
+
+//NOTIFICATION FOR ADD TO CART ITEM
+.notification{
+background: rgb(88, 201, 102);
+  padding:8px 15px;
+  color:white;
+  width:300px;
+  right:500px;
+top:10px;
+  z-index: 999999999;
+  position: fixed;
+  animation-name: fromRightToLeft;
+  animation-duration: 3s;
+  right: 10px;
+  transition: all .2s;
+  .closeRel{
+    position: relative;
+    .closeAbs{
+      cursor:pointer;
+      position: absolute;
+      right:0;
+      font-size: 13px;
+    }
+  }
+  h6{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  p{
+    margin-bottom:0;
+    font-weight: 300;
+    font-size: 13px;
+  }
+}
+
+// .animNotificationShow{
+//   animation-name: fromRightToLeft;
+//   animation-duration: 1s;
+//   right: 10px;
+// }
+@keyframes fromRightToLeft {
+0% {
+  right: -500px;
+
+}
+25% {
+  right: 10px;
+
+}
+50% {
+  right: 10px;
+
+}
+75% {
+  right: 10px;
+
+}
+100% {
+    right: -500px;
+
+}
+}
+
+.animNotificationHide{
+animation-name: toTop;
+animation-duration: 2s;
+top: -100px;
+
+}
+@keyframes toTop {
+0% {
+top: 10px;
+display: block;
+}
+100% {
+top: -100px;
+display: none;
+}
+
+}

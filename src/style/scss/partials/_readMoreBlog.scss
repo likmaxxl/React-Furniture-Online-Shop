@@ -1,0 +1,32 @@
+.readMoreBlog{
+  padding-top:310px;
+  padding:310px 5px 0 5px;
+@media all and (min-width:768px){
+
+      padding:230px 0px 0 0px;
+}
+  .header{
+    h3{
+      text-transform: capitalize;
+    }
+    .info{
+      span{
+        font-size: 14px;
+        &:nth-of-type(1),
+        &:nth-of-type(3){
+          padding-right:4px;
+        }
+        &:nth-of-type(2){
+          padding-right:10px;
+        }
+      }
+    }
+  }
+  .readMore_coverImg{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .text_ReadMoreBlig{
+    padding-bottom:30px;
+  }
+}

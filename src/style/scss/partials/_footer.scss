@@ -1,0 +1,103 @@
+footer {
+  padding: 50px 0;
+  font-family: "Poppins", sans-serif;
+  background: rgb(54, 54, 54);
+
+
+
+  .coll {
+    article {
+      padding-top:20px;//padding-top:0;
+      text-align: center;//text-align:left;
+      h5 {
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;//text-align: left;
+        color: white;
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+          font-size: 14px;
+          color: #a9a9a9;
+          &:hover {
+            color: #a9a9a9;
+            text-decoration: none;
+          }
+          li {
+            padding: 3px 0;
+          }
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      article {
+        ul:nth-of-type(2) {
+          margin-top: 20px;
+          display: flex;
+          align-items: center; //align-items: flex-start;
+    justify-content: center; //align-items: flex-start;
+          li {
+            img {
+              width: 40px;
+              height: 22px;
+              margin-right: 5px;
+              -webkit-box-shadow: 2px 10px 15px -7px rgba(0, 0, 0, 0.75);
+              -moz-box-shadow: 2px 10px 15px -7px rgba(0, 0, 0, 0.75);
+              box-shadow: 2px 10px 15px -7px rgba(0, 0, 0, 0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.copyright {
+  padding: 30px 0;//  padding: 20px 0;
+  background: $darkerBlackColor;
+  .row{
+    margin:0 auto;
+  .copyrightText {
+    color: #a9a9a9;
+    font-family: "Poppins", sans-serif;
+    text-align: left;//text-align: right;
+    font-size: 13px; //  font-size: 13px;
+    margin-bottom:10px;//margin-bottom:0;
+  }
+  .social {
+    padding-right: 50px;
+    text-align: right;
+    a {
+      transition: all 0.3s;
+      color: #a9a9a9;
+      font-size: 17px;
+      padding-left: 15px;
+      &:hover {
+        transition: all 0.3s;
+      }
+      &:nth-of-type(1):hover {
+        color: #38b8ff;
+      }
+      &:nth-of-type(2):hover {
+        color: #3b5998;
+      }
+      &:nth-of-type(3):hover {
+        color: #ff0000;
+      }
+      &:nth-of-type(4):hover {
+        color: #c63f3c;
+      }
+      &:nth-of-type(5):hover {
+        color: #0077b5;
+      }
+      &:nth-of-type(6):hover {
+        color: #cc2127;
+      }
+    }
+  }
+}
+}

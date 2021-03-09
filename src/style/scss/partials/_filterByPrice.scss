@@ -1,0 +1,145 @@
+#furnitureMainPage,
+.boxesfilteredProducts{
+padding-top:290px;
+@media all and (min-width:768px){
+    padding-top:200px;
+
+}
+.filterByPrice {
+  margin: 34px 0 30px 0;//margin: 0 0 30px 0;
+  border-bottom: solid 1px #b4b2b2;
+  padding: 30px 0 10px 0;
+  display: flex;
+  .title {
+    display: flex;
+    width: auto;// width: 30%;
+    align-items: center;
+    h5 {
+      font-weight: 600;
+      font-size: 22px;
+      color: $darkerBlackColor;
+      text-transform: uppercase;
+      margin: 0;
+        margin-top:-100px;
+        &{
+          @media all and (min-width:992px){
+       margin-top:0px;
+          }
+        }
+    }
+  }
+  .filterTitle {
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    display: flex;
+    .filterPrice {
+      form {
+        align-items: center;
+        display: flex;
+        .price {
+          padding-right: 30px;
+          span {
+            padding-right: 7px;
+          }
+          font-size: 14px;
+          select {
+            cursor: pointer;
+            width: 170px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+              linear-gradient(135deg, gray 50%, transparent 50%),
+              linear-gradient(to right, #ccc, #ccc);
+            background-position: calc(100% - 20px) calc(1em + -1px),
+              calc(100% - 15px) calc(1em + -1px), calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px, 5px 5px, 0px 1.5em;
+            background-repeat: no-repeat;
+            color: #5f5c5c;
+            padding: 4px 0 4px 10px;
+            border: solid 1px #b0b0b0;
+            &:focus {
+              outline: #5f5c5c;
+            }
+          }
+        }
+        .howMuchShow {
+          padding-right: 30px;
+          span {
+            padding-right: 7px;
+            font-size: 14px;
+          }
+          select {
+            border: solid 1px #b0b0b0;
+            cursor: pointer;
+            width: 60px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+              linear-gradient(135deg, gray 50%, transparent 50%),
+              linear-gradient(to right, #ccc, #ccc);
+            background-position: calc(100% - 20px) calc(1em + -1px),
+              calc(100% - 15px) calc(1em + -1px), calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px, 5px 5px, 0px 1.5em;
+            background-repeat: no-repeat;
+            color: #5f5c5c;
+            padding: 4px 0 4px 10px;
+            &:focus {
+              outline: $darkerBlackColor;
+            }
+          }
+        }
+      }
+    }
+    .blockGrid {
+      display: flex;
+      border: solid 1px #b0b0b0;
+      margin-top:24px;
+      .icon {
+        margin: 3px 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+          transition: all 0.2s;
+          color: $orangeColor;
+        }
+      }
+      &{
+        @media all and (min-width:768px){
+     margin-top:0px;
+        }
+      }
+    }
+  }
+  .columnsClickedColor{
+    color:#d58e32;
+  }
+  .gridClickedColor{
+    color:#d58e32;
+  }
+}
+}
+.pagnation{
+  margin-top:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+
+  .pagnationFlex{
+
+.pageBtns{
+  color:$orangeColor;
+  border-right:none;
+  background: white;
+&:nth-last-of-type(1){
+  border-right:solid 1px black;
+}
+}
+  }
+}
+.selectedButtonPagnation{
+  background:$orangeColor !important;
+  color:white !important;
+
+}
