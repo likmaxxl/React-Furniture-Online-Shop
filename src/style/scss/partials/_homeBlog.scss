@@ -176,6 +176,15 @@ text-align: center;
     }
 .slide{
   background: white;
+  .row{
+    .coll:nth-of-type(2),
+      .coll:nth-of-type(3){
+      display:none;
+      @media all and (min-width:992px){
+        display: block;
+      }
+    }
+  }
 }
     .carousel-status,
     .control-arrow{

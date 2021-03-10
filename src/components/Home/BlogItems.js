@@ -32,9 +32,9 @@ const BlogItems = (props) => {
             </div>
             <div>
               <div className="row">
-                <BlogItem />
-                <BlogItem />
-                <BlogItem />
+                <BlogItem bg={bg1}/>
+              <BlogItem bg={bg2}/>
+            <BlogItem bg={bg3}/>
               </div>
             </div>
           </Carousel>

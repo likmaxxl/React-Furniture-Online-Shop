@@ -1895,6 +1895,13 @@ html, body {
     margin: 0; }
   #blog .carousel-root .carousel .slide {
     background: white; }
+    #blog .carousel-root .carousel .slide .row .coll:nth-of-type(2),
+    #blog .carousel-root .carousel .slide .row .coll:nth-of-type(3) {
+      display: none; }
+      @media all and (min-width: 992px) {
+        #blog .carousel-root .carousel .slide .row .coll:nth-of-type(2),
+        #blog .carousel-root .carousel .slide .row .coll:nth-of-type(3) {
+          display: block; } }
   #blog .carousel-root .carousel .carousel-status,
   #blog .carousel-root .carousel .control-arrow {
     display: none; }
