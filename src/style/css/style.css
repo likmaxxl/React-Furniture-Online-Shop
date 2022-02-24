@@ -296,7 +296,6 @@ html, body {
   to {
     height: 100vh;
     top: 0px;
-    transform: translate(0 1200px);
     background: black; } }
 /*******HEADER ANIMATION ON SCROLL************/
 .headerFromBottomToTop {
