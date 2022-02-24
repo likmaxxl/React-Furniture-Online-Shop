@@ -64,25 +64,35 @@ width:100%;
   }
 
   .navNewProducts {
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
-
+@media screen and (min-width:375px){
+  justify-content: center;
+}
     ul {
       display: flex;
       list-style: none;
       align-items: center;
       justify-content: center;
       margin: 0;
+      padding:0;
       li {
         color: $darkerBlackColor;
-        font-size: 18px;
-        margin-right: 20px;
+        font-size: 16px;
+        margin-right: 6px;
         font-family: "Poppins", sans-serif;
         cursor: pointer;
         box-sizing: border-box;
-        padding-bottom: 4px;
-        font-size: 20px;
+        padding-bottom: 10px;
         border-bottom: solid 3px #e2e2e2;
+            @media screen and (min-width:375px){
+                margin-right: 13px;
+            }
+        @media screen and (min-width:576px){
+          font-size: 18px;
+          margin-right: 20px;
+          padding-bottom: 7px;
+        }
       }
       li:hover {
         border-bottom: solid 3px $orangeColor;

@@ -77,7 +77,7 @@
           left: 50%;
           transform: translate(-50%, -33%);
           .btn {
-            padding: 7px;
+            padding: 6px 0px;
             font-size: 15px;
             position: relative;
             background: rgba(0, 0, 0, 0.8);
@@ -87,6 +87,9 @@
             cursor: pointer;
             user-select: none;
             border-radius: 0px;
+            @media screen and (min-width:375px){
+                  padding: 7px;
+            }
             span {
               padding-right: 7px;
             }

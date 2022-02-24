@@ -31,21 +31,28 @@ padding-top:290px;
   .filterTitle {
     justify-content: flex-end;
     align-items: center;
-    width: 70%;
+    width: 59%;
     display: flex;
+    @media all and (min-width:375px){
+  width: 70%;
+    }
     .filterPrice {
       form {
         align-items: center;
         display: flex;
         .price {
-          padding-right: 30px;
+          padding-right:6px;
+            font-size: 14px;
+          @media all and (min-width:375px){
+                padding-right: 30px;
+          }
           span {
             padding-right: 7px;
           }
-          font-size: 14px;
+
           select {
             cursor: pointer;
-            width: 170px;
+            width: 145px;
             -webkit-appearance: none;
             -moz-appearance: none;
             background-image: linear-gradient(45deg, transparent 50%, gray 50%),
@@ -61,10 +68,16 @@ padding-top:290px;
             &:focus {
               outline: #5f5c5c;
             }
+            @media all and (min-width:375px){
+                width: 170px;
+            }
           }
         }
         .howMuchShow {
-          padding-right: 30px;
+          padding-right:4px;
+          @media all and (min-width:375px){
+                padding-right: 30px;
+          }
           span {
             padding-right: 7px;
             font-size: 14px;
