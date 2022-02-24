@@ -29,7 +29,7 @@ const HotDealsCarousel = (props) => {
               <span style={{ pointerEvents: "none"}}>
                 <i style={{ pointerEvents: "none"}} className="fas fa-cart-plus"></i>
               </span>
-            {context.state.allProductsData[props.keyIndex-1].inCart===true?"ADDED":"ADD TO CART"}
+            {context.state.allProductsData[props.keyIndex-1].inCart===true?"ADDED":"ADD TO CARTS"}
             </button>
           </div>
 
