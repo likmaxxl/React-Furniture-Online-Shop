@@ -52,7 +52,7 @@ padding-top:290px;
 
           select {
             cursor: pointer;
-            width: 145px;
+            width: 153px;
             -webkit-appearance: none;
             -moz-appearance: none;
             background-image: linear-gradient(45deg, transparent 50%, gray 50%),
@@ -63,12 +63,14 @@ padding-top:290px;
             background-size: 5px 5px, 5px 5px, 0px 1.5em;
             background-repeat: no-repeat;
             color: #5f5c5c;
+            padding: 5px 0 6px 10px;
             padding: 4px 0 4px 10px;
             border: solid 1px #b0b0b0;
             &:focus {
               outline: #5f5c5c;
             }
             @media all and (min-width:375px){
+                padding: 4px 0 4px 10px;
                 width: 170px;
             }
           }

@@ -9,13 +9,20 @@
     font-size: 24px;
     color: #dedede;
     width: 30%;
+    display: none;
     text-transform: uppercase;
+    @media screen and (min-width:576px){
+        display: block;
+    }
   }
   .navigation {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 70%;
+    width: 100%;
+    @media screen and (min-width:576px){
+        width: 70%;
+    }
     nav {
       margin-right: 10px;
       display: flex;
