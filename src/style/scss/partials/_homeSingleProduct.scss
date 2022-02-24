@@ -112,8 +112,11 @@ border:solid 1px rgb(127,127,127);
         font-weight: 300;
         display: flex;
         .numberOfreviews {
-          padding: 0 7px;
+          padding: 0 0px;
           color: #676767;
+          @media screen and (min-width:375px){
+            padding: 0 7px;
+          }
         }
         .addRreview {
           color: #676767;
