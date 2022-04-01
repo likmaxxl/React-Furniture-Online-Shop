@@ -18,7 +18,7 @@ const HotDealsCarousel = (props) => {
 
   <div className="daysLeft">
     <DateCountdown
-      dateTo='February 29, 2022 00:00:00 GMT+03:00'
+      dateTo='April 29, 2022 00:00:00 GMT+03:00'
       locales={['year','month','days','hrs','min','sec']}
       locales_plural={['year','month','days','hrs','min','sec']}
       callback={()=>alert('Hello')}/>
