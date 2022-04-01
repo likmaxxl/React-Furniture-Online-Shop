@@ -296,7 +296,6 @@ html, body {
   to {
     height: 100vh;
     top: 0px;
-    transform: translate(0 1200px);
     background: black; } }
 /*******HEADER ANIMATION ON SCROLL************/
 .headerFromBottomToTop {
@@ -400,12 +399,12 @@ html, body {
     padding: 3px;
     letter-spacing: -1px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 12px;
     margin: 0 9px;
     text-transform: uppercase;
     background: rgba(42, 42, 42, 0.82);
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -422,6 +421,11 @@ html, body {
       display: flex;
       justify-content: center;
       align-items: center; }
+    @media all and (min-width: 375px) {
+      #coverHomePage #carouselHotDeals .odometer-block > span {
+        font-size: 20px;
+        width: 70px;
+        height: 70px; } }
     @media all and (min-width: 992px) {
       #coverHomePage #carouselHotDeals .odometer-block > span {
         margin: 0 1px; } }
@@ -448,7 +452,7 @@ html, body {
         left: 50%;
         transform: translate(-50%, -33%); }
         #coverHomePage #carouselHotDeals .slider-wrapper .slide > div .addToCartBtn .btn {
-          padding: 7px;
+          padding: 6px 0px;
           font-size: 15px;
           position: relative;
           background: rgba(0, 0, 0, 0.8);
@@ -458,6 +462,9 @@ html, body {
           cursor: pointer;
           user-select: none;
           border-radius: 0px; }
+          @media screen and (min-width: 375px) {
+            #coverHomePage #carouselHotDeals .slider-wrapper .slide > div .addToCartBtn .btn {
+              padding: 7px; } }
           #coverHomePage #carouselHotDeals .slider-wrapper .slide > div .addToCartBtn .btn span {
             padding-right: 7px; }
           #coverHomePage #carouselHotDeals .slider-wrapper .slide > div .addToCartBtn .btn:before, #coverHomePage #carouselHotDeals .slider-wrapper .slide > div .addToCartBtn .btn:after {
@@ -645,10 +652,15 @@ html, body {
       text-align: center; }
       #coverHomePage #carouselBig .carouselBigBanner h1 {
         line-height: 1;
-        font-size: 58px;
+        font-size: 46px;
         font-weight: 700; }
         #coverHomePage #carouselBig .carouselBigBanner h1 span {
           font-weight: 300; }
+        @media screen and (min-width: 375px) {
+          #coverHomePage #carouselBig .carouselBigBanner h1 {
+            line-height: 1;
+            font-size: 58px;
+            font-weight: 700; } }
       #coverHomePage #carouselBig .carouselBigBanner p {
         padding: 0;
         margin: 0;
@@ -999,8 +1011,18 @@ html, body {
   #table .navNewProducts,
   #ad .navNewProducts,
   .searchPage .navNewProducts {
-    justify-content: center;
+    justify-content: flex-start;
     display: flex; }
+    @media screen and (min-width: 375px) {
+      .newProducts .navNewProducts,
+      #furnitureMainPage .navNewProducts,
+      #chair .navNewProducts,
+      #bedroom .navNewProducts,
+      #sofa .navNewProducts,
+      #table .navNewProducts,
+      #ad .navNewProducts,
+      .searchPage .navNewProducts {
+        justify-content: center; } }
     .newProducts .navNewProducts ul,
     #furnitureMainPage .navNewProducts ul,
     #chair .navNewProducts ul,
@@ -1013,7 +1035,8 @@ html, body {
       list-style: none;
       align-items: center;
       justify-content: center;
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
       .newProducts .navNewProducts ul li,
       #furnitureMainPage .navNewProducts ul li,
       #chair .navNewProducts ul li,
@@ -1023,14 +1046,35 @@ html, body {
       #ad .navNewProducts ul li,
       .searchPage .navNewProducts ul li {
         color: #2a2a2a;
-        font-size: 18px;
-        margin-right: 20px;
+        font-size: 16px;
+        margin-right: 6px;
         font-family: "Poppins", sans-serif;
         cursor: pointer;
         box-sizing: border-box;
-        padding-bottom: 4px;
-        font-size: 20px;
+        padding-bottom: 10px;
         border-bottom: solid 3px #e2e2e2; }
+        @media screen and (min-width: 375px) {
+          .newProducts .navNewProducts ul li,
+          #furnitureMainPage .navNewProducts ul li,
+          #chair .navNewProducts ul li,
+          #bedroom .navNewProducts ul li,
+          #sofa .navNewProducts ul li,
+          #table .navNewProducts ul li,
+          #ad .navNewProducts ul li,
+          .searchPage .navNewProducts ul li {
+            margin-right: 13px; } }
+        @media screen and (min-width: 576px) {
+          .newProducts .navNewProducts ul li,
+          #furnitureMainPage .navNewProducts ul li,
+          #chair .navNewProducts ul li,
+          #bedroom .navNewProducts ul li,
+          #sofa .navNewProducts ul li,
+          #table .navNewProducts ul li,
+          #ad .navNewProducts ul li,
+          .searchPage .navNewProducts ul li {
+            font-size: 18px;
+            margin-right: 20px;
+            padding-bottom: 7px; } }
       .newProducts .navNewProducts ul li:hover,
       #furnitureMainPage .navNewProducts ul li:hover,
       #chair .navNewProducts ul li:hover,
@@ -1473,14 +1517,21 @@ html, body {
       display: flex;
       list-style: none; }
       #furnitureGallery .coll .navigationGallery ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 5px 0;
         text-align: center;
-        flex: 1;
-        font-size: 16px;
+        flex: 1 1;
+        font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
         border: solid 1px #e3dede;
-        cursor: pointer; }
+        cursor: pointer;
+        line-height: 19px; }
+        @media screen and (min-width: 375px) {
+          #furnitureGallery .coll .navigationGallery ul li {
+            font-size: 16px; } }
         #furnitureGallery .coll .navigationGallery ul li:active, #furnitureGallery .coll .navigationGallery ul li:focus {
           border-top: solid 3px #d58e32;
           background: #f4f5f7;
@@ -1673,16 +1724,21 @@ html, body {
           #furnitureGallery .coll #carouselFurniture .carousel .priceTitle .prices {
             z-index: 1;
             position: relative;
-            top: 20px;
+            top: 14px;
             color: white;
             background: #575759eb;
             align-items: center;
             justify-content: center;
             display: flex;
             flex-direction: column;
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%; }
+            @media screen and (min-width: 375px) {
+              #furnitureGallery .coll #carouselFurniture .carousel .priceTitle .prices {
+                width: 110px;
+                height: 110px;
+                top: 20px; } }
             #furnitureGallery .coll #carouselFurniture .carousel .priceTitle .prices .newPrice {
               font-weight: 600;
               font-size: 20px; }
@@ -1694,8 +1750,11 @@ html, body {
             -moz-box-shadow: -3px 8px 11px -5px rgba(0, 0, 0, 0.75);
             box-shadow: -3px 8px 11px -5px rgba(0, 0, 0, 0.75);
             position: relative;
-            padding: 34px 30px;
+            padding: 17px 30px;
             background: white; }
+            @media screen and (min-width: 375px) {
+              #furnitureGallery .coll #carouselFurniture .carousel .priceTitle .titlePrice {
+                padding: 34px 30px; } }
             #furnitureGallery .coll #carouselFurniture .carousel .priceTitle .titlePrice h4 {
               color: #2a2a2a;
               text-transform: capitalize; }
@@ -2157,23 +2216,31 @@ footer {
     .boxesfilteredProducts .filterByPrice .filterTitle {
       justify-content: flex-end;
       align-items: center;
-      width: 70%;
+      width: 59%;
       display: flex; }
+      @media all and (min-width: 375px) {
+        #furnitureMainPage .filterByPrice .filterTitle,
+        .boxesfilteredProducts .filterByPrice .filterTitle {
+          width: 70%; } }
       #furnitureMainPage .filterByPrice .filterTitle .filterPrice form,
       .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form {
         align-items: center;
         display: flex; }
         #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .price,
         .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .price {
-          padding-right: 30px;
+          padding-right: 6px;
           font-size: 14px; }
+          @media all and (min-width: 375px) {
+            #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .price,
+            .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .price {
+              padding-right: 30px; } }
           #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .price span,
           .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .price span {
             padding-right: 7px; }
           #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .price select,
           .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .price select {
             cursor: pointer;
-            width: 170px;
+            width: 153px;
             -webkit-appearance: none;
             -moz-appearance: none;
             background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
@@ -2181,14 +2248,24 @@ footer {
             background-size: 5px 5px, 5px 5px, 0px 1.5em;
             background-repeat: no-repeat;
             color: #5f5c5c;
+            padding: 5px 0 6px 10px;
             padding: 4px 0 4px 10px;
             border: solid 1px #b0b0b0; }
             #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .price select:focus,
             .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .price select:focus {
               outline: #5f5c5c; }
+            @media all and (min-width: 375px) {
+              #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .price select,
+              .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .price select {
+                padding: 4px 0 4px 10px;
+                width: 170px; } }
         #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .howMuchShow,
         .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .howMuchShow {
-          padding-right: 30px; }
+          padding-right: 4px; }
+          @media all and (min-width: 375px) {
+            #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .howMuchShow,
+            .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .howMuchShow {
+              padding-right: 30px; } }
           #furnitureMainPage .filterByPrice .filterTitle .filterPrice form .howMuchShow span,
           .boxesfilteredProducts .filterByPrice .filterTitle .filterPrice form .howMuchShow span {
             padding-right: 7px;
@@ -2420,9 +2497,15 @@ footer {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: solid 1px #e2dfdf;
-    display: flex; }
+    display: block; }
+    @media screen and (min-width: 768px) {
+      .featuredProductGrid .product {
+        display: flex; } }
     .featuredProductGrid .product .img {
-      width: 30%; }
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .featuredProductGrid .product .img {
+          width: 30%; } }
       .featuredProductGrid .product .img img {
         object-fit: cover;
         height: 214px;
@@ -2432,8 +2515,13 @@ footer {
       padding-right: 0;
       display: flex;
       flex-direction: column;
-      width: 70%;
-      color: #2a2a2a; }
+      width: 100%;
+      color: #2a2a2a;
+      margin-top: 20px; }
+      @media screen and (min-width: 768px) {
+        .featuredProductGrid .product .productInfo {
+          width: 70%;
+          margin-top: 0; } }
       .featuredProductGrid .product .productInfo .titleInfo {
         transition: all 0.3s;
         border: none;
@@ -2530,7 +2618,8 @@ footer {
       display: flex;
       width: 40px;
       height: 40px;
-      position: relative; }
+      position: relative;
+      left: 4px; }
       .newsLetter form span:before {
         position: absolute;
         width: .5px;
@@ -2538,6 +2627,9 @@ footer {
         content: "";
         border: solid .5px #d0c5c5;
         left: 40px; }
+      @media screen and (min-width: 375px) {
+        .newsLetter form span {
+          left: 0; } }
     .newsLetter form input {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
@@ -2562,11 +2654,14 @@ footer {
       width: 40px;
       height: 40px;
       border-radius: 5px;
-      margin-left: 0px; }
+      margin-left: -17px; }
       .newsLetter form .btn button:focus {
         border: none;
         outline: none;
         box-shadow: none; }
+      @media screen and (min-width: 375px) {
+        .newsLetter form .btn button {
+          margin-left: 0px; } }
     @media all and (min-width: 768px) {
       .newsLetter form {
         margin-left: 30px; } }
@@ -2664,8 +2759,11 @@ footer {
         font-weight: 300;
         display: flex; }
         .singleProduct .productDetailsContainer .productDetails .reviews .numberOfreviews {
-          padding: 0 7px;
+          padding: 0 0px;
           color: #676767; }
+          @media screen and (min-width: 375px) {
+            .singleProduct .productDetailsContainer .productDetails .reviews .numberOfreviews {
+              padding: 0 7px; } }
         .singleProduct .productDetailsContainer .productDetails .reviews .addRreview {
           color: #676767;
           cursor: pointer;
@@ -2705,16 +2803,20 @@ footer {
           .singleProduct .productDetailsContainer .productDetails .addToCart .add button {
             letter-spacing: 0.5px;
             background: #d58e32;
-            padding: 10px;
+            padding: 9px 5px;
             border-radius: 0px;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 11px;
             font-weight: 600;
             border: none;
             height: 35px;
             line-height: 10px;
             margin-right: 4px;
             color: white; }
+            @media screen and (min-width: 375px) {
+              .singleProduct .productDetailsContainer .productDetails .addToCart .add button {
+                padding: 10px;
+                font-size: 13px; } }
             .singleProduct .productDetailsContainer .productDetails .addToCart .add button:active, .singleProduct .productDetailsContainer .productDetails .addToCart .add button:focus {
               outline: none;
               box-shadow: none;
@@ -3074,12 +3176,19 @@ footer {
     font-size: 24px;
     color: #dedede;
     width: 30%;
+    display: none;
     text-transform: uppercase; }
+    @media screen and (min-width: 576px) {
+      .navBar .logo {
+        display: block; } }
   .navBar .navigation {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 70%; }
+    width: 100%; }
+    @media screen and (min-width: 576px) {
+      .navBar .navigation {
+        width: 70%; } }
     .navBar .navigation nav {
       margin-right: 10px;
       display: flex;

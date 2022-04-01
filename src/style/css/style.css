@@ -315,7 +315,6 @@ html, body {
     transform: translate(0px, -300px); } }
 /**SCROLL DOWN**/
 .headerFromTopToBottom {
-  height: 206px;
   position: fixed !important;
   z-index: 9999;
   width: 100%;
