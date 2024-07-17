@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import {UserContext} from '../Context'
-import DateCountdown from 'react-date-countdown-timer';
+// import DateCountdown from 'react-date-countdown-timer';
 import {Link} from 'react-router-dom'
-
+import CountdownComponent from '../CountdownComponent';
 const HotDealsCarousel = (props) => {
 
+
+  
   return (
   <div>
 <UserContext.Consumer>
@@ -17,11 +19,13 @@ const HotDealsCarousel = (props) => {
 
 
   <div className="daysLeft">
-    <DateCountdown
-      dateTo='April 29, 2022 00:00:00 GMT+03:00'
+    {/* <DateCountdown
+      dateTo='July 31, 2024 00:00:00 GMT+03:00'
       locales={['year','month','days','hrs','min','sec']}
       locales_plural={['year','month','days','hrs','min','sec']}
-      callback={()=>alert('Hello')}/>
+      callback={()=>alert('Hello')}/> */}
+      <CountdownComponent />
+
   </div>
        <div>
           <div className="addToCartBtn">
